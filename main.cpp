@@ -9,13 +9,18 @@
 #define KWHT  "\x1B[37m"
 // C++ but i stole everything from C and just added a class
 void print_inv();
+
 class player {
     public:
         int money;
         int health;
 };
+
+// variabls
 int p_inv[] = {0,0,0};
 player pla {0, 100};
+
+// main
 int main() {
     int inp = getchar();
     int option1 = 49;
@@ -26,7 +31,11 @@ int main() {
     }
     return 0;
 }
+
+//shop
 void shop(){std::cout << "Hello";}
+
+// print menu
 void print_inv(){
     printf("⊱ ────── {⋅.   Drug sim   .⋅} ────── ⊰\n");
     printf("%s                ❤  %d\n", KRED,pla.health);
