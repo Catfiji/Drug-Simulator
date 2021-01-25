@@ -1,3 +1,4 @@
+## ⋆⛧┈┈┈┈﹤୨♡୧﹥ ┈┈┈┈⛧⋆
 # Drug Simulator
 ## rpg game where you play as a drug dealer
 
@@ -23,3 +24,4 @@ im coding them all mostly the same, this is mostly for learning purposes
 I may add another language in the future, just dont know what.
 
 
+## ⋆⛧┈┈┈┈﹤୨♡୧﹥ ┈┈┈┈⛧⋆
