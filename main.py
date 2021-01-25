@@ -9,33 +9,50 @@ KCYN = "\x1B[36m"
 KWHT = "\x1B[37m"
 
 # Variables
-player_health = 100
-player_money = 0
-p_inv = [0,0,0]
+class player:
+    def __init__(self, money, health, inv, location):
+        self.money = money
+        self.health = health 
+        self.inv = inv 
+        self.location = location 
+
+class location:
+    def __init__(self, prices):
+        self.prices = prices
+
+downtown = location([80,150,10])
+inv = [0,0,0]
+pla = player(0, 100, inv, downtown)
 
 # Print menu
 def print_inv():
     print("⊱ ────── ⋅.   Drug sim   .⋅ ────── ⊰");
-    print(f"{KRED}                ❤  {player_health}")
-    print(f"{KGRN}                💲  {player_money}\n")
+    print(f"{KRED}                ❤  {pla.health}")
+    print(f"{KGRN}                💲  {pla.money}\n")
     print(f"{KYEL}              𝕴𝖓𝖛𝖊𝖓𝖙𝖔𝖗𝖞")
     print(f"{KCYN}          ╔═══════════════╗\n")
-    print(f"{KGRN}            🌿  Weed: {p_inv[0]}")
-    print(f"{KWHT}            🧂  Cocaine: {p_inv[1]}")
-    print(f"{KMAG}            💊  Percocet: {p_inv[2]}\n")
+    print(f"{KGRN}            🌿  Weed: {pla.inv[0]}")
+    print(f"{KWHT}            🧂  Cocaine: {pla.inv[1]}")
+    print(f"{KMAG}            💊  Percocet: {pla.inv[2]}\n")
     print(f"{KCYN}          ╚═══════════════╝",KCYN)
     print(f"{KWHT}⊱ ────── ⋅. Made by Cat .⋅ ────── ⊰",KWHT)
-	print(".  ❤ thanks for playing ❤  .\n")
+    print(".  ❤ thanks for playing ❤  .\n")#
 
 # Shop
 def shop():
-    print("hello")
+    print(f"[1] Weed price: {pla.location.prices[0]}\n");
+    print(f"[2] Cocaine price: {pla.location.prices[1]}\n");
+    print(f"[3] Percocet price: {pla.location.prices[2]}\n");
 
 # Main
 def main():
+    print_inv()
+    print(f"{KNRM} [1] Buy drugs \n");
     inp = input()
+
     if inp == "1":
-        print_inv()
+        shop()
+        
     else:
         print("hello")
 
