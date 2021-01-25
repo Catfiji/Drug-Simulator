@@ -6,9 +6,9 @@ im coding them all exactly the same
 
 ### Planned features:
 
-- [] Locations
-- [] Shop to buy guns, pets, ect.
-- [] ...
+- [ ] Locations
+- [ ] Shop to buy guns, pets, ect.
+- [ ] ...
 
 ### Stats:
 *lines in total / code in total
