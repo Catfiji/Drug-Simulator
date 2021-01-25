@@ -25,6 +25,7 @@ int city[] = {100, 200, 11};
 int downtown[] = {80, 150, 10};  // replace with locations array that has an array of locations that have arrays of prices
 void print_inv(void); 
 void shop(void);
+void bank(void);
 struct player pla = {0, 100, 0}; // Money, Health
 
 
@@ -77,4 +78,18 @@ void print_inv(void){
     printf("%s          ╚═══════════════╝\n",KCYN);
     printf("%s⊱ ────── {⋅. Made by Cat .⋅} ────── ⊰\n",KWHT);
     printf(".❤ thanks for playing ❤.\n"); // cute but remove this line
+}
+
+void bank(void) {
+    printf("Bank\n");
+    printf("    ▟▉▉▉▙\n");
+    printf("  ▟▉▉▉▉▉▉▉▙\n");
+    printf("▟▉▉▉▉▉▉▉▉▉▉▉▙\n");
+    printf("▛▛▛▔▔▔▔▔▔▔▜▜▜ \n");
+    printf("▌▌▌  ▓  ▓  ▌▌▌\n");
+    printf("▙▙▙▁▞☰☰☰▚▁▟▟▟\n");
+    printf("       ▖▖\n");
+    printf("    █▖        () \n");
+    printf("      ▖█       ▏  \n");
+    printf("     █▖     ▚▚▜▛▞▞\n");
 }
