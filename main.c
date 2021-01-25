@@ -13,17 +13,20 @@
 
 // stop minimizing code, you fucking insane asylum patient
 int player_money = 0x00, player_health = 0x64, p_inv[] = {0, 0, 0};
+int location_price[] = {80, 150, 10};
 void print_inv(void); 
 void shop(void);
 
 // main
 int main(void) {
+    print_inv();
+    printf("%s [1] Buy drugs \n",KNRM);
     int inp = getchar();
     int option1 = 49; // idk how i got this value just roll with it, it means "1" though haha
     
     // replace with menu
     if (inp == option1){
-        print_inv(); // move up
+        shop(); // move up
     } else {
         printf("hello");
     }
@@ -31,8 +34,12 @@ int main(void) {
     return 0;
 }
 
-// shop
-void shop(void){printf("hello");} // STOP
+// shop WORKING ON
+void shop(void){
+    printf("[1] Weed price: %d\n", location_price[0]);
+    printf("[2] Cocaine price: %d\n", location_price[1]);
+    printf("[3] Percocet price: %d\n", location_price[2]);
+}
 
 // print a menu
 void print_inv(void){
