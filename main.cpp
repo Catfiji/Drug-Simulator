@@ -33,10 +33,8 @@ class player
 
 // variabls
 
-    // prices{weed, cocaine, percocet}
-    location downtown {{80, 150, 10}}
-;   // money, health, location, inventory
-    player pla {0, 100, downtown, {0, 0, 0}}
+    location downtown {{80, 150, 10}} // prices{weed, cocaine, percocet}
+;   player pla {0, 100, downtown, {0, 0, 0}} // money, health, location, inventory
 ;
 
 // main
@@ -51,8 +49,7 @@ int main()
 }   else 
 {       printf("hello")
 ;
-}
-    return 0
+}   return 0
 ;
 }
 
