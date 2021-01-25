@@ -14,5 +14,6 @@ im coding them all exactly the same
 So far as you can see, C is kind of in the middle of PY and C++. PY and C++ utilize their OOP features, which dosent make C worse then them at all, just wanted to clearify.
 
 
+I may add another language in the future, just dont know what.
 
 
