@@ -8,6 +8,7 @@ im coding them all exactly the same, this is mostly for learning purposes
 
 - [ ] Locations
 - [ ] Shop to buy guns, pets, ect.
+- [ ] splitting the files up into smaller files *this will come at the very end, for now ill keep everything in one file*
 - [ ] ...
 
 ### Stats:
