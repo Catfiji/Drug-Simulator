@@ -4,12 +4,12 @@ This is a project im working on comparing my main three programming languages to
 im coding them all exactly the same
 
 ### Stats:
-*im using total lines of each files, might use just the code lines for future scoring*
-##### Longest file: C++ (51 lines)
+*lines in total / code in total
+##### Longest file: C++ (51 lines)(41 lines)
 
-##### Shortest file: Py  (42 lines)
+##### Shortest file: Py  (42 lines)(32 lines)
 
-##### Prettiest file: C 
+##### (imo)Prettiest file: C (50 lines)(34 lines)
 
 
 
