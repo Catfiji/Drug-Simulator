@@ -1,5 +1,5 @@
-#include <stdio.h>
-// change indent sizes for fuck sake i cant read any of this // any day now
+
+#include <stdio.h> // change indent sizes for fuck sake i cant read any of this // any day now 
 
 // got these colours from some place idk
 #define KNRM  "\x1B[0m"
@@ -28,8 +28,8 @@ struct player
 ;   void shop(void)
 ;   struct player pla = {0, 100, 0} // Money, Health, Location
 ;   void bank(void)
-;
 
+;
 
 // main
 int main(void) 
@@ -64,6 +64,7 @@ void shop(void)
 ;   printf("[2] Cocaine price: %d\n", location[2])
 ;   printf("[3] Percocet price: %d\n", location[3])
 ;
+
 }
 
 // print a menu
@@ -95,4 +96,5 @@ void bank(void)
 ;   printf("      ▖█       ▏  \n")
 ;   printf("     █▖     ▚▚▜▛▞▞\n")
 ;
+
 }
