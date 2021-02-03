@@ -9,6 +9,15 @@ struct player
 ;
 }; 
 
+/*
+
+struct Drug 
+{	unsigned int price
+;	unsigned char name[100]
+;
+};
+
+*/
 
 // stop minimizing code, you fucking insane asylum patient
     int p_inv[] = {0, 0, 0}
@@ -18,7 +27,6 @@ struct player
 ;   void shop(void)
 ;   struct player pla = {0, 100, 0} // Money, Health, Location
 ;   void bank(void)
-
 ;
 
 // main
