@@ -1,15 +1,5 @@
-
 #include <stdio.h> // change indent sizes for fuck sake i cant read any of this // any day now 
-
-// got these colours from some place idk
-#define KNRM  "\x1B[0m"
-#define KRED  "\x1B[31m"
-#define KGRN  "\x1B[32m"
-#define KYEL  "\x1B[33m"
-#define KBLU  "\x1B[34m"
-#define KMAG  "\x1B[35m"
-#define KCYN  "\x1B[36m"
-#define KWHT  "\x1B[37m"
+#include "colors.h"
 
 // player
 struct player
@@ -34,7 +24,7 @@ struct player
 // main
 int main(void) 
 {   print_inv()
-;   printf("%s [1] Buy drugs \n",KNRM) // temp-menu 
+;   printf(reset "[1] Buy drugs \n") // temp-menu 
 ;   int inp = getchar()
 ;   int option1 = 49
 ;   if (inp == option1)
@@ -70,15 +60,15 @@ void shop(void)
 // print a menu
 void print_inv(void)
 {   printf("⊱ ────── {⋅.   Drug sim   .⋅} ────── ⊰\n")
-;   printf("%s                ❤  %d\n", KRED, pla.health)
-;   printf("%s                💲  %d\n\n",KGRN, pla.money)
-;   printf("%s              𝕴𝖓𝖛𝖊𝖓𝖙𝖔𝖗𝖞\n",KYEL)
-;   printf("%s          ╔═══════════════╗\n\n",KCYN)
-;   printf("%s            🌿  Weed: %d\n",KGRN, p_inv[0])
-;   printf("%s            🧂  Cocaine: %d\n",KWHT, p_inv[1])
-;   printf("%s            💊  Percocet: %d\n\n",KMAG, p_inv[2])
-;   printf("%s          ╚═══════════════╝\n",KCYN)
-;   printf("%s⊱ ────── {⋅. Made by Cat .⋅} ────── ⊰\n",KWHT)
+;   printf("%s                ❤  %d\n", RED, pla.health)
+;   printf("%s                💲  %d\n\n",GRN, pla.money)
+;   printf("%s              𝕴𝖓𝖛𝖊𝖓𝖙𝖔𝖗𝖞\n",YEL)
+;   printf("%s          ╔═══════════════╗\n\n",CYN)
+;   printf("%s            🌿  Weed: %d\n",GRN, p_inv[0])
+;   printf("%s            🧂  Cocaine: %d\n",WHT, p_inv[1])
+;   printf("%s            💊  Percocet: %d\n\n",MAG, p_inv[2])
+;   printf("%s          ╚═══════════════╝\n",CYN)
+;   printf("%s⊱ ────── {⋅. Made by Cat .⋅} ────── ⊰\n",WHT)
 ;   printf(".❤ thanks for playing ❤.\n")
 ;
 }
