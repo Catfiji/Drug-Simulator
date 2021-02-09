@@ -19,6 +19,7 @@ struct Drug
 
 */
 
+
 // stop minimizing code, you fucking insane asylum patient
     int p_inv[] = {0, 0, 0}
 ;   int city[] = {100, 200, 11}
@@ -27,6 +28,7 @@ struct Drug
 ;   void shop(void)
 ;   struct player pla = {0, 100, 0} // Money, Health, Location
 ;   void bank(void)
+
 ;
 
 // main
@@ -37,6 +39,7 @@ int main(void)
 ;   int option1 = 49
 ;   if (inp == option1)
 {       shop()
+;		print_inv()
 ;
 }   else 
 {       printf("hello")
@@ -61,8 +64,14 @@ void shop(void)
 }   printf("[1] Weed price: %d\n", location[1])
 ;   printf("[2] Cocaine price: %d\n", location[2])
 ;   printf("[3] Percocet price: %d\n", location[3])
+;	int ll = getchar()
+;	if (ll == 49)
+{		if (pla.money > location[1])
+{			p_inv[0] += 1
+;			pla.money = pla.money - location[1]
 ;
-
+}
+}
 }
 
 // print a menu
